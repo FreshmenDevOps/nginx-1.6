@@ -22,7 +22,7 @@
 
 #### Attach persistent/shared directories
 
-    docker run -d -p 80:8180 -p 443:8543 -v <sites-enabled-dir>:/etc/nginx/conf.d -v <certs-dir>:/etc/nginx/certs -v <log-dir>:/var/log/nginx -v <html-dir>:/var/www/html nginx:1.8
+    docker run -d -p 80:8180 -p 443:8543 -v <nginx-dir>:/etc/nginx -v <log-dir>:/var/log/nginx -v <html-dir>:/srv/www nginx:1.8
 
 Open `http://<host>:8180` to verify.
 
